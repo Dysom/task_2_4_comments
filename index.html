@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="SETTINGS.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Task_2_4</title>
+</head>
+
+<body class="page">
+    <main class="page__wrapper wrapper">
+        <form action="" id="add-comment-form" class="page__form add-comment-form">
+            <fieldset class="add-comment-form__fieldset">
+                <label for="comment_name" class="add-comment-form__label">Имя:</label>
+                <div class="add-comment-form__input-wrapper">
+                    <input class="add-comment-form__input-text" type="text" name="comment_name"
+                           placeholder="Введите имя" />
+                </div>
+            </fieldset>
+            <fieldset class="add-comment-form__fieldset">
+                <label for="comment_text" class="add-comment-form__label">Текст:</label>
+                <div class="add-comment-form__input-wrapper">
+                    <textarea class="add-comment-form__textarea" name="comment_text"
+                              placeholder="Введите текст"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="add-comment-form__fieldset">
+                <label for="comment_date" class="add-comment-form__label">Дата:</label>
+                <div class="add-comment-form__input-wrapper">
+                    <input class="add-comment-form__input-date" type="date" name="comment_date" />
+                </div>
+            </fieldset>
+            <fieldset class="add-comment-form__fieldset">
+                <button class="add-comment-form__button">Отправить</button>
+            </fieldset>
+        </form>
+        <div id="comments" class="comments"></div>
+    </main>
+</body>
+
+</html>
