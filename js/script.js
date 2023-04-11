@@ -97,9 +97,15 @@ function processCommentForm() {
         }
 
         insertCommentToList(commentElem, commentsListElem);
+
+        clearForm();
     }
 
     unlockForm();
+}
+
+function clearForm() {
+    commentNameInput.value = commentTextInput.value = '';
 }
 
 function lockForm() {
